@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.20" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Qz6-6L-vkQ">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="h5E-ip-6Y8">
+            <objects>
+                <viewController id="Qz6-6L-vkQ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bJh-q7-0Ps"/>
+                        <viewControllerLayoutGuide type="bottom" id="qsm-9a-Kvk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nc7-ve-anv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEm-x0-BgU">
+                                <rect key="frame" x="147" y="46" width="307" height="64"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="33"/>
+                                <color key="textColor" red="0.31392075210092857" green="0.49087300208492879" blue="0.52051767676767668" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="theCloud" translatesAutoresizingMaskIntoConstraints="NO" id="zeo-SA-9cP">
+                                <rect key="frame" x="147" y="123" width="307" height="260"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lj4-B7-DJ8">
+                                <rect key="frame" x="223" y="517" width="154" height="50"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="35"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" red="0.26683720944744344" green="0.482998763424969" blue="0.58360953282828287" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="mAn-e8-Fr1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.66142550538940759" green="0.87005661339212259" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="lj4-B7-DJ8" firstAttribute="centerX" secondItem="nc7-ve-anv" secondAttribute="centerX" id="G94-CD-qo8"/>
+                            <constraint firstItem="mEm-x0-BgU" firstAttribute="centerX" secondItem="nc7-ve-anv" secondAttribute="centerX" id="Urx-xu-K8q"/>
+                            <constraint firstItem="zeo-SA-9cP" firstAttribute="centerX" secondItem="nc7-ve-anv" secondAttribute="centerX" id="nEw-IQ-Q9u"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y5e-WZ-NSQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-229" y="335"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Dodge_the_Drops" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Game Over!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xEg-Je-dic">
+                                <rect key="frame" x="86" y="176" width="225" height="52"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <color key="textColor" red="0.37468366384350116" green="0.54969174568553758" blue="0.64204545454545459" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Score: 10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGS-Y7-14x">
+                                <rect key="frame" x="104" y="272" width="189" height="46"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <color key="textColor" red="0.32010879662274661" green="0.50537975393777057" blue="0.53795770205252524" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Best: 20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5FA-dB-xdt">
+                                <rect key="frame" x="104" y="332" width="189" height="46"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <color key="textColor" red="0.3042136233057427" green="0.48883549647586316" blue="0.52034011995858587" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pus-t2-1Xg">
+                                <rect key="frame" x="147" y="55" width="80" height="59"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <color key="textColor" red="0.2341819982245491" green="0.65864564802268388" blue="0.90915009469696972" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r0w-Pc-tEG">
+                                <rect key="frame" x="150" y="438" width="75" height="70"/>
+                                <state key="normal" image="unnamed"/>
+                                <connections>
+                                    <action selector="replayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fxK-0S-2lf"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="previousViewController" id="T6Q-QW-1zt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.46523546630000001" green="0.94367947379999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="pus-t2-1Xg" secondAttribute="trailing" constant="9" id="9Vg-zj-G1z"/>
+                            <constraint firstItem="5FA-dB-xdt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Emh-Pt-RDb"/>
+                            <constraint firstItem="r0w-Pc-tEG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HbH-3n-KWu"/>
+                            <constraint firstItem="pGS-Y7-14x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YRQ-dF-0Fc"/>
+                            <constraint firstItem="xEg-Je-dic" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aQQ-7U-189"/>
+                            <constraint firstItem="pus-t2-1Xg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="qDF-lB-xa7"/>
+                            <constraint firstItem="pus-t2-1Xg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vEM-nW-sLR"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="UJ8-93-p4C" appends="YES" id="HWG-Ke-Zlv"/>
+                        </connections>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="gameOverLabel" destination="xEg-Je-dic" id="bX6-cf-vxr"/>
+                        <outlet property="highScoreLabel" destination="5FA-dB-xdt" id="Ss1-Ft-VIw"/>
+                        <outlet property="replayButtonActions" destination="r0w-Pc-tEG" id="Lod-Gx-j9p"/>
+                        <outlet property="scoreLabel" destination="pus-t2-1Xg" id="oMS-dF-XeD"/>
+                        <outlet property="yourScore" destination="pGS-Y7-14x" id="Maf-ZI-931"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="UJ8-93-p4C">
+                    <pressTypeMask key="allowedPressTypes"/>
+                    <connections>
+                        <action selector="playerPan:" destination="BYZ-38-t0r" id="9n0-cY-lfF"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="457.5" y="334.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="theCloud" width="299" height="297"/>
+        <image name="unnamed" width="100" height="100"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="mAn-e8-Fr1"/>
+    </inferredMetricsTieBreakers>
+</document>
